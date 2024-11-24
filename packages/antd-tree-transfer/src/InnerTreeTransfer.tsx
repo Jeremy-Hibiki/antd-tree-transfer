@@ -5,7 +5,7 @@ import { useMemo } from 'react';
 
 import type { TreeTransferItem, TreeTransferProps } from './types';
 
-import { generateLeftTree, generateRightTree, searchTreeFilter } from './utils';
+import { generateLeftTree, generateRightTree } from './utils';
 
 const InnerTreeTransfer = <RecordType extends TreeTransferItem = TreeTransferItem>({
   dataSource,
@@ -47,16 +47,14 @@ const InnerTreeTransfer = <RecordType extends TreeTransferItem = TreeTransferIte
       targetKeys={targetKeys}
       showSelectAll
     >
-      {({ direction, filteredItems, onItemSelectAll, selectedKeys }) => {
-        if (transferDataSource.length === 0) {
+      {({ direction, onItemSelectAll, selectedKeys }) => {
+        if (transferDataSource.length === 0 && loadingRenderer !== undefined) {
           return loadingRenderer;
         }
 
-        const items = searchTreeFilter(dataSource, filteredItems);
-
         if (direction === 'left') {
           const checkedKeys = [...selectedKeys, ...(targetKeys ?? [])];
-          const treeData = generateLeftTree(items, targetKeys);
+          const treeData = generateLeftTree(dataSource, targetKeys);
           return (
             <div style={{ padding: token.paddingXS }}>
               <Tree
@@ -76,7 +74,7 @@ const InnerTreeTransfer = <RecordType extends TreeTransferItem = TreeTransferIte
             </div>
           );
         } else {
-          const treeData = generateRightTree(items, targetKeys);
+          const treeData = generateRightTree(dataSource, targetKeys);
           return (
             <div style={{ padding: token.paddingXS }}>
               <Tree

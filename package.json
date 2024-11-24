@@ -1,12 +1,12 @@
 {
-  "name": "antd-tree-transfer",
   "type": "module",
   "version": "0.0.0",
   "private": true,
   "packageManager": "yarn@4.5.2",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -b && vite build",
+    "build": "yarn workspace antd-tree-transfer build",
+    "dev": "yarn workspace playground dev",
     "lint": "eslint --flag unstable_ts_config .",
     "test": "vitest"
   },
@@ -42,5 +42,8 @@
   },
   "resolutions": {
     "eslint-plugin-perfectionist": "^4.0.3"
-  }
+  },
+  "workspaces": [
+    "packages/**"
+  ]
 }
