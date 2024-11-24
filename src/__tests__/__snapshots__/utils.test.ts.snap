@@ -1,0 +1,258 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`filter tree > works 1`] = `
+[
+  {
+    "children": [
+      {
+        "key": "parent-3-child-1",
+        "title": "parent-3-child-1",
+      },
+    ],
+    "key": "parent-3-with-multiple-children",
+    "title": "parent-3-with-multiple-children",
+  },
+]
+`;
+
+exports[`generate tree > select all of leaf nodes - 1 > left tree 1`] = `
+[
+  {
+    "disabled": false,
+    "key": "parent-1-without-children",
+    "title": "parent-1-without-children",
+  },
+  {
+    "children": [
+      {
+        "disabled": true,
+        "key": "parent-2-child-1",
+        "title": "parent-2-child-1",
+      },
+    ],
+    "disabled": true,
+    "key": "parent-2-with-one-child",
+    "title": "parent-2-with-one-child",
+  },
+  {
+    "children": [
+      {
+        "disabled": false,
+        "key": "parent-3-child-1",
+        "title": "parent-3-child-1",
+      },
+      {
+        "disabled": false,
+        "key": "parent-3-child-2",
+        "title": "parent-3-child-2",
+      },
+      {
+        "disabled": false,
+        "key": "parent-3-child-3",
+        "title": "parent-3-child-3",
+      },
+    ],
+    "disabled": false,
+    "key": "parent-3-with-multiple-children",
+    "title": "parent-3-with-multiple-children",
+  },
+]
+`;
+
+exports[`generate tree > select all of leaf nodes - 1 > right tree 1`] = `
+[
+  {
+    "_keepNodeFlag": false,
+    "children": [
+      {
+        "_keepNodeFlag": true,
+        "children": [],
+        "key": "parent-2-child-1",
+        "title": "parent-2-child-1",
+      },
+    ],
+    "key": "parent-2-with-one-child",
+    "title": "parent-2-with-one-child",
+  },
+]
+`;
+
+exports[`generate tree > select all of leaf nodes - 2 > left tree 1`] = `
+[
+  {
+    "disabled": false,
+    "key": "parent-1-without-children",
+    "title": "parent-1-without-children",
+  },
+  {
+    "children": [
+      {
+        "disabled": false,
+        "key": "parent-2-child-1",
+        "title": "parent-2-child-1",
+      },
+    ],
+    "disabled": false,
+    "key": "parent-2-with-one-child",
+    "title": "parent-2-with-one-child",
+  },
+  {
+    "children": [
+      {
+        "disabled": true,
+        "key": "parent-3-child-1",
+        "title": "parent-3-child-1",
+      },
+      {
+        "disabled": true,
+        "key": "parent-3-child-2",
+        "title": "parent-3-child-2",
+      },
+      {
+        "disabled": true,
+        "key": "parent-3-child-3",
+        "title": "parent-3-child-3",
+      },
+    ],
+    "disabled": true,
+    "key": "parent-3-with-multiple-children",
+    "title": "parent-3-with-multiple-children",
+  },
+]
+`;
+
+exports[`generate tree > select all of leaf nodes - 2 > right tree 1`] = `
+[
+  {
+    "_keepNodeFlag": false,
+    "children": [
+      {
+        "_keepNodeFlag": true,
+        "children": [],
+        "key": "parent-3-child-1",
+        "title": "parent-3-child-1",
+      },
+      {
+        "_keepNodeFlag": true,
+        "children": [],
+        "key": "parent-3-child-2",
+        "title": "parent-3-child-2",
+      },
+      {
+        "_keepNodeFlag": true,
+        "children": [],
+        "key": "parent-3-child-3",
+        "title": "parent-3-child-3",
+      },
+    ],
+    "key": "parent-3-with-multiple-children",
+    "title": "parent-3-with-multiple-children",
+  },
+]
+`;
+
+exports[`generate tree > select none nodes > left tree 1`] = `
+[
+  {
+    "disabled": false,
+    "key": "parent-1-without-children",
+    "title": "parent-1-without-children",
+  },
+  {
+    "children": [
+      {
+        "disabled": false,
+        "key": "parent-2-child-1",
+        "title": "parent-2-child-1",
+      },
+    ],
+    "disabled": false,
+    "key": "parent-2-with-one-child",
+    "title": "parent-2-with-one-child",
+  },
+  {
+    "children": [
+      {
+        "disabled": false,
+        "key": "parent-3-child-1",
+        "title": "parent-3-child-1",
+      },
+      {
+        "disabled": false,
+        "key": "parent-3-child-2",
+        "title": "parent-3-child-2",
+      },
+      {
+        "disabled": false,
+        "key": "parent-3-child-3",
+        "title": "parent-3-child-3",
+      },
+    ],
+    "disabled": false,
+    "key": "parent-3-with-multiple-children",
+    "title": "parent-3-with-multiple-children",
+  },
+]
+`;
+
+exports[`generate tree > select one of leaf nodes > left tree 1`] = `
+[
+  {
+    "disabled": false,
+    "key": "parent-1-without-children",
+    "title": "parent-1-without-children",
+  },
+  {
+    "children": [
+      {
+        "disabled": false,
+        "key": "parent-2-child-1",
+        "title": "parent-2-child-1",
+      },
+    ],
+    "disabled": false,
+    "key": "parent-2-with-one-child",
+    "title": "parent-2-with-one-child",
+  },
+  {
+    "children": [
+      {
+        "disabled": false,
+        "key": "parent-3-child-1",
+        "title": "parent-3-child-1",
+      },
+      {
+        "disabled": true,
+        "key": "parent-3-child-2",
+        "title": "parent-3-child-2",
+      },
+      {
+        "disabled": false,
+        "key": "parent-3-child-3",
+        "title": "parent-3-child-3",
+      },
+    ],
+    "disabled": false,
+    "key": "parent-3-with-multiple-children",
+    "title": "parent-3-with-multiple-children",
+  },
+]
+`;
+
+exports[`generate tree > select one of leaf nodes > right tree 1`] = `
+[
+  {
+    "_keepNodeFlag": false,
+    "children": [
+      {
+        "_keepNodeFlag": true,
+        "children": [],
+        "key": "parent-3-child-2",
+        "title": "parent-3-child-2",
+      },
+    ],
+    "key": "parent-3-with-multiple-children",
+    "title": "parent-3-with-multiple-children",
+  },
+]
+`;

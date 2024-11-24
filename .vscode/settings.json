@@ -1,0 +1,29 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.options": {
+    "flags": ["unstable_ts_config"]
+  },
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never",
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+}
